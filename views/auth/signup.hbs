@@ -1,0 +1,15 @@
+<h2>Regístrate Porfi</h2>
+
+{{#if error}}
+    <h3 class="error">{{error}}</h3>
+{{/if}}
+
+<form action="/signup" method="post">
+    <input {{#if email}} value="{{email}}" {{/if}} type="email" name="email" placeholder="Tu email" >
+    <br>
+    <input type="password" name="password1" placeholder="password">
+    <br>
+    <input type="password" name="password2" placeholder="password again">
+    <br>
+    <input type="submit">
+</form>
